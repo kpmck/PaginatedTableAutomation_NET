@@ -1,0 +1,156 @@
+﻿<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Simple Table with Pagination</title>
+	<link href="https://www.seleniumeasy.com/test/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="https://www.seleniumeasy.com/test/css/main.css" rel="stylesheet">
+	<link href="https://www.seleniumeasy.com/test/css/custom.css" rel="stylesheet">
+</head>
+<body>
+	<section class="content">
+		<div class="table-responsive">
+			<table class="table table-hover">
+				<thead class="btn-primary">
+					<tr>
+						<th></th>
+						<th>ID</th>
+						<th>FirstName</th>
+						<th>LastName</th>
+						<th>City</th>
+						<th>State</th>
+						<th>Job</th>
+					</tr>
+				</thead>
+				<tbody id="myTable">
+					<tr style="display: table-row;">
+						<td><input type="checkbox" /></td>
+						<td>1</td>
+						<td>Jean</td>
+						<td>Gray</td>
+						<td>Orlando</td>
+						<td>FL</td>
+						<td>Pyrotechnician</td>
+					</tr>
+					<tr style="display: table-row;">
+						<td><input type="checkbox" /></td>
+						<td>2</td>
+						<td>Charles</td>
+						<td>Xavier</td>
+						<td>Orlando</td>
+						<td>FL</td>
+						<td>Headmaster</td>
+					</tr>
+					<tr style="display: table-row;">
+						<td><input type="checkbox" /></td>
+						<td>3</td>
+						<td>Hank</td>
+						<td>McCoy</td>
+						<td>Orlando</td>
+						<td>FL</td>
+						<td>Scientist</td>
+					</tr>
+					<tr style="display: table-row;">
+						<td><input type="checkbox" /></td>
+						<td>4</td>
+						<td>Scott</td>
+						<td>Summers</td>
+						<td>Orlando</td>
+						<td>FL</td>
+						<td>Radio Announcer</td>
+					</tr>
+					<tr style="display: table-row;">
+						<td><input type="checkbox" /></td>
+						<td>5</td>
+						<td>Rogue</td>
+						<td></td>
+						<td>Orlando</td>
+						<td>FL</td>
+						<td>Bodybuilder</td>
+					</tr>
+					<tr style="display: none;">
+						<td><input type="checkbox" /></td>
+						<td>6</td>
+						<td>Warren</td>
+						<td>Worthington III</td>
+						<td>Centerport</td>
+						<td>NY</td>
+						<td>Pilot</td>
+					</tr>
+					<tr style="display: none;">
+						<td><input type="checkbox" /></td>
+						<td>7</td>
+						<td>Robert</td>
+						<td>Drake</td>
+						<td>Long Island</td>
+						<td>NY</td>
+						<td>Ice Cream Man</td>
+					</tr>
+					<tr style="display: none;">
+						<td><input type="checkbox" /></td>
+						<td>8</td>
+						<td>Max</td>
+						<td>Eisenhardt</td>
+						<td>Long Island</td>
+						<td>NY</td>
+						<td>Magneticist</td>
+					</tr>
+					<tr style="display: none;">
+						<td><input type="checkbox" /></td>
+						<td>9</td>
+						<td>Jamie</td>
+						<td>Maddox</td>
+						<td>Manhattan</td>
+						<td>NY</td>
+						<td>Multiplier</td>
+					</tr>
+					<tr style="display: none;">
+						<td><input type="checkbox" /></td>
+						<td>9</td>
+						<td>Jamie</td>
+						<td>Maddox</td>
+						<td>Buffalo</td>
+						<td>NY</td>
+						<td>Multiplier</td>
+					</tr>
+					<tr style="display: none;">
+						<td><input type="checkbox" /></td>
+						<td>10</td>
+						<td>Remy</td>
+						<td>Lebeau</td>
+						<td>New Orleans</td>
+						<td>LA</td>
+						<td>Blackjack dealer</td>
+					</tr>
+					<tr style="display: none;">
+						<td><input type="checkbox" /></td>
+						<td>12</td>
+						<td>Sean</td>
+						<td>Cassidy</td>
+						<td>Dublin</td>
+						<td>DE</td>
+						<td>Opera Singer</td>
+					</tr>
+					<tr style="display: none;">
+						<td><input type="checkbox" /></td>
+						<td>13</td>
+						<td>Emma</td>
+						<td>Frost</td>
+						<td></td>
+						<td></td>
+						<td>Jeweler</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</section>
+	<div class="col-md-6 text-center">
+		<ul class="pagination pagination-lg pager" id="myPager"></ul>
+	</div>
+	<script src="https://www.seleniumeasy.com/test/js/jquery.js"></script>
+	<script src="https://www.seleniumeasy.com/test/js/table-pagination.js"></script>
+	<script src="https://www.seleniumeasy.com/test/js/bootstrap.min.js"></script>
+	<script src="https://www.seleniumeasy.com/test/js/treemenu.js"></script>
+</body>
+</html>
